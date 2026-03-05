@@ -190,4 +190,3 @@ function drawWaves(t) {
     vertex(width, height);
     endShape(CLOSE);
   }
-}
