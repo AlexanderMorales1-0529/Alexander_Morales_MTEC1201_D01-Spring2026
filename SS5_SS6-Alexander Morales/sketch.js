@@ -21,7 +21,7 @@ function draw() {
   // Update and render circles
   for (let c of circles) {
     c.update();
-    c.display();
+    c.display(); 
   }
   
   // Update and render squares
@@ -109,6 +109,6 @@ class Square {
     noStroke();
     rectMode(CENTER);
     rect(0, 0, this.size, this.size);
-    pop(); // Restore coordinate system
+    pop(); // Restore coordinate system and prevent rotation from affecting other objects
   }
 }
